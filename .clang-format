@@ -1,0 +1,30 @@
+---
+Language: Cpp
+BasedOnStyle: WebKit
+AlignAfterOpenBracket: BlockIndent
+AlignEscapedNewlines: DontAlign
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: WithoutElse
+BinPackArguments: false
+BinPackParameters: false
+BreakBeforeBraces: Attach
+ColumnLimit: 80
+IncludeBlocks: Merge
+IncludeCategories:
+  - Regex: '^".*"$'
+    Priority: 1
+  - Regex: "^<sys/types.h>$"
+    Priority: 2
+  - Regex: "^<std.*>$"
+    Priority: 4
+  - Regex: "^<.*>$"
+    Priority: 3
+KeepEmptyLinesAtTheStartOfBlocks: false
+PointerAlignment: Right
+QualifierAlignment: Left
+SeparateDefinitionBlocks: Always
+SpaceAfterCStyleCast: true
+PenaltyReturnTypeOnItsOwnLine: 240
+WhitespaceSensitiveMacros:
+  - EMBED_FILE
